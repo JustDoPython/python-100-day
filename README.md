@@ -10,6 +10,10 @@
 - [第4天：Python 流程控制](http://justdopython.com/python/2019/08/04/python-004.html)
 - [第5天：Python 函数](http://justdopython.com/python/2019/08/08/python-005.html)
 - [第6天：Python 模块和包](http://justdopython.com/python/2019/08/13/python-006.html)
+- [第7天：Python 序列](http://www.justdopython.com/2019/09/01/python-007/)
+- [第8天：Python 列表](http://www.justdopython.com/2019/09/03/python-008/)
+- [第9天：Python 元组](http://www.justdopython.com/2019/09/09/python-tupple-009/)
+- [第10天：Python 类与对象](http://www.justdopython.com/2019/09/10/python-class-010/)
 
 关注公众号：python技术，回复"python"一起学习交流
 
