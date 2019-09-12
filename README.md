@@ -13,6 +13,7 @@
 - [第7天：Python 序列](http://www.justdopython.com/2019/09/01/python-007/)
 - [第8天：Python 列表](http://www.justdopython.com/2019/09/03/python-008/)
 - [第9天：Python 元组](http://www.justdopython.com/2019/09/09/python-tupple-009/)
+- [第10天：Python 类与对象](http://www.justdopython.com/2019/09/10/python-class-010/)
 
 关注公众号：python技术，回复"python"一起学习交流
 
