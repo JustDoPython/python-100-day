@@ -7,7 +7,6 @@ while (count < 9):
  
 print("Good bye!")
 
-
 count = 0
 while count < 6:
    print(count, " is  less than 6")
