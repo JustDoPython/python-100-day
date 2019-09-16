@@ -5,7 +5,6 @@ def hello() :
 #调用函数
 hello()
 
-
 #定义一个函数
 def helloN(name) :
    print("Hello World!", name)
