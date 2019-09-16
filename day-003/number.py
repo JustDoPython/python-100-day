@@ -8,7 +8,6 @@ print (counter)
 print (miles)
 print (name)
 
-
 print (5 + 4)  # 加法   输出 9
 print (4.3 - 2) # 减法   输出 2.3
 print (3 * 7)  # 乘法  输出 21
