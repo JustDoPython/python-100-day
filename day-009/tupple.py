@@ -3,6 +3,8 @@ tup2 = (1, 2, 3, 4, 5 );
 tup3 = "a", "b", "c", "d";
 tup4 = ()
 
+
+
 print(tup1)
 
 print('元组tup3的类型是：%s' % type(tup3))
