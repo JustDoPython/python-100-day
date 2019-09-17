@@ -2,9 +2,6 @@ tup1 = ('baidu', 'google', 12, 34);
 tup2 = (1, 2, 3, 4, 5 );
 tup3 = "a", "b", "c", "d";
 tup4 = ()
-#print('元组tup1是：%s' % tup1)
-#print('元组tup2是：%s' % tup2)
-#print('元组tup3是：%s' % tup3)
 
 print(tup1)
 
