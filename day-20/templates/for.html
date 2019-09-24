@@ -1,0 +1,12 @@
+{% import 'mymarco.html' as macros %}
+<ul>
+    {% for name in names %}
+    <li>{{ name }} </li>
+    {% endfor %}
+</ul>
+
+<ul>
+    {% for name in names %}
+    {{ macros.render_name(name) }}
+    {% endfor %}
+</ul>

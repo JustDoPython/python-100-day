@@ -1,0 +1,9 @@
+{% macro render_name(name) %}
+    <li>{{ name }}</li>
+{% endmacro %}
+<h1> mymarcoM</h1>
+<ul>
+    {% for name in names %}
+        {{ render_name(name) }}
+    {% endfor %}
+</ul>

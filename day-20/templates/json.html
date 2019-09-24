@@ -1,0 +1,11 @@
+<p>{{ data1 | default(1, true) }}</p>
+
+<!-- 提供默认值过滤器 -->
+<h1>Hello {{ name | default('world')}}!</h1>
+
+<!-- 将false、False和空(none)视为未定义的默认值过滤器 -->
+<h1>Hello {{ name | default('world', true) }}</h1>
+
+<!-- 列表过滤器 -->
+<p> 列表 {{ list }} 中的最小值是: {{ list | min }}</p>
+<p> 列表 {{ list }} 中的最大值是: {{ list | max }}</p>
