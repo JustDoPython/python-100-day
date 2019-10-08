@@ -32,8 +32,9 @@
 - [第25天：Requests的基本用法](http://www.justdopython.com/2019/10/07/python-spider-requests-base-025)
 - [第26天：Requests的高级用法](http://www.justdopython.com/2019/10/07/python-spider-requests-senior-026)
 - [第27天：PyQuery 详解](http://www.justdopython.com/2019/10/07/python-spider-PyQuery-027)
+- [第28天：Python 标准库概览1](http://www.justdopython.com/2019/10/08/python-standard-library01-028/)
+- [第29天：Python 标准库概览2](https://github.com/JustDoPython/python-100-day/tree/master/day-029)
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
-
 
 
 关注公众号：python技术，回复"python"一起学习交流
