@@ -76,3 +76,4 @@ key_fun('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 # TypeError: key_fun() got multiple values for argument 'voltage'
 key_fun(100, voltage=1000)                             # error
 
+
