@@ -35,7 +35,7 @@
 - [第28天：Python 标准库概览1](http://www.justdopython.com/2019/10/08/python-standard-library01-028/)
 - [第29天：Python 标准库概览2](https://github.com/JustDoPython/python-100-day/tree/master/day-029)
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
-
+- [第35天：Python 枚举](http://www.justdopython.com/2019/10/09/python-enum-036)
 
 关注公众号：python技术，回复"python"一起学习交流
 
