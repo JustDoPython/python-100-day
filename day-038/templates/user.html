@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from 'bootstrap/nav.html' import render_breadcrumb_item %}
+{% block content %}
+<span>面包屑</span>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {{ render_breadcrumb_item('index', '首页') }}
+        {{ render_breadcrumb_item('user', '用户') }}
+        {{ render_breadcrumb_item('post', '文章') }}
+    </ol>
+</nav>
+
+<h1> Welcome to User page! </h1>
+
+{% endblock %}
