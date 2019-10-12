@@ -29,6 +29,7 @@
 - [第24天：Python 标准库概览2](https://github.com/JustDoPython/python-100-day/tree/master/day-029)
 - [第26天： Python 标准库之 os 模块详解](http://www.justdopython.com/2019/10/09/python-os-demonstration-026/)
 - [第27天：Python shutil 模块](http://www.justdopython.com/2019/10/09/python-shutil-027)
+- [第28天： Python 标准库之 sys 模块详解]( http://www.justdopython.com/2019/10/12/python-sys-demonstration-028/ )
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
 - [第36天：Python 枚举](http://www.justdopython.com/2019/10/09/python-enum-036)
 - [第43天：初识 Python 多线程 ](http://www.justdopython.com/2019/09/17/python-thread-043)
