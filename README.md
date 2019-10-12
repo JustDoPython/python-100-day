@@ -31,7 +31,7 @@
 - [第26天： Python 标准库之 os 模块详解](http://www.justdopython.com/2019/10/09/python-os-demonstration-026/)
 - [第27天：Python shutil 模块](http://www.justdopython.com/2019/10/09/python-shutil-037)
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
-- [第35天：Python 枚举](http://www.justdopython.com/2019/10/09/python-enum-036)
+- [第36天：Python 枚举](http://www.justdopython.com/2019/10/09/python-enum-036)
 - [第44天：Python 多线程之 threading 模块 ](http://www.justdopython.com/2019/09/28/python-threading-023)
 - [第49天：Python Queue 入门](http://www.justdopython.com/2019/10/10/python-queue01)
 - [第51天：爬虫的介绍](http://www.justdopython.com/2019/10/07/python-spider-introduction-024)
