@@ -25,6 +25,7 @@ tag=['https://www.cnblogs.com/yangyuqig/p/10101663.html']
 print("下标从0-24的元素内容是：%s " % tag[0][0:24])
 
 num=[1,2,3,4,5,6,7,8,9,10]
+
 # 表示从第四个到最后一个元素
 print("数字从3-10的内容是：%s " % num[3:10])
 
