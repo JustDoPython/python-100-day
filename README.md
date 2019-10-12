@@ -13,12 +13,12 @@
 - [第8天：Python 列表](http://www.justdopython.com/2019/09/03/python-008/)
 - [第9天：Python 元组](http://www.justdopython.com/2019/09/09/python-tupple-009/)
 - [第10天：Python 类与对象](http://www.justdopython.com/2019/09/10/python-class-010/)
-- [第11天：Python 错误和异常](http://www.justdopython.com/2019/09/10/python-011)
 - [第11天：Python dictionary](http://www.justdopython.com/2019/09/11/python-dictionary-011)
 - [第12天：Python 之引用](http://www.justdopython.com/2019/09/12/python-reference-012)
 - [第13天：Python 输入输出](http://www.justdopython.com/2019/09/14/python-inputoutput-013)
 - [第14天： Web开发 Flask介绍](http://www.justdopython.com/2019/09/16/python-web-014)
 - [第15天：Python set](http://www.justdopython.com/2019/09/16/python-set-015)
+- [第16天：Python 错误和异常](http://www.justdopython.com/2019/09/10/python-016)
 - [第17天：Python 函数之参数 ](http://www.justdopython.com/2019/09/19/python-function-param-017)
 - [第18天：Python 高阶函数](http://www.justdopython.com/2019/09/20/python-higher-function-018)
 - [第19天：Python 之迭代器](http://www.justdopython.com/2019/09/21/python-iterator-019)
@@ -34,10 +34,10 @@
 - [第43天：初识 Python 多线程 ](http://www.justdopython.com/2019/09/17/python-thread-043)
 - [第44天：Python 多线程之 threading 模块 ](http://www.justdopython.com/2019/09/28/python-threading-023)
 - [第49天：Python Queue 入门](http://www.justdopython.com/2019/10/10/python-queue01)
-- [第51天：爬虫的介绍](http://www.justdopython.com/2019/10/07/python-spider-introduction-024)
-- [第53天：Requests的基本用法](http://www.justdopython.com/2019/10/07/python-spider-requests-base-025)
-- [第54天：Requests的高级用法](http://www.justdopython.com/2019/10/07/python-spider-requests-senior-026)
-- [第59天：PyQuery 详解](http://www.justdopython.com/2019/10/07/python-spider-PyQuery-027)
+- [第51天：爬虫的介绍](http://www.justdopython.com/2019/10/07/python-spider-introduction-051)
+- [第53天：Requests的基本用法](http://www.justdopython.com/2019/10/07/python-spider-requests-base-053)
+- [第54天：Requests的高级用法](http://www.justdopython.com/2019/10/07/python-spider-requests-senior-054)
+- [第59天：PyQuery 详解](http://www.justdopython.com/2019/10/07/python-spider-PyQuery-059)
 
 关注公众号：python技术，回复"python"一起学习交流
 
