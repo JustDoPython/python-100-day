@@ -1,0 +1,46 @@
+<!-- 引入导航模块的宏 render_nav_item -->
+{% from 'bootstrap/nav.html' import render_nav_item %} 
+<!-- 下面是正常的 Bootstrap 页面代码，看起来很复杂，不过可以从官网上拷贝 -->
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %} Flask Bootstrap {% endblock %}</title> <!-- 定义标题块 -->
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {{ bootstrap.load_css() }}  <!-- 动态加载 Bootstrap 样式 -->
+    </head>
+    <body>
+    <main class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Python100</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- 利用宏 render_nav_item 创建菜单 -->
+                    {{ render_nav_item('index', '首页', use_li=True) }}
+                    {{ render_nav_item('user', '用户', use_li=True) }}
+                    {{ render_nav_item('post', '文章', use_li=True) }}
+                </ul>
+            </div>
+        </nav>
+        {% block content %}  <!-- 定义内容块 -->
+        <h1> Hello Flask Bootstrap! </h1>
+        {% endblock %}
+        <footer class="text-center">
+            {% block footer %} <!-- 定义页脚块 -->
+                <small> &copy; 2019 <a href="http://justdopython.com" title="python 100天">Python 技术</a>
+                </small>
+            {% endblock %}
+        </footer>
+    </main>
+
+    <!-- 动态加载 Bootstrap js 脚本 -->
+    {{ bootstrap.load_js() }}
+    </body>
+</html>

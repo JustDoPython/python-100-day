@@ -1,5 +1,5 @@
 # 使用list函数
-ll = list('hello')
+ll = list('hello list')
 print(ll)
 
 # 列表元素赋值 如 x[3]=5

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% from 'bootstrap/nav.html' import render_breadcrumb_item %}
+{% from 'bootstrap/utils.html' import render_static %}
+
+{{ render_static('css', 'style.css') }}
+
+{% block content %}
+<span>面包屑</span>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {{ render_breadcrumb_item('index', '首页') }}
+        {{ render_breadcrumb_item('user', '用户') }}
+        {{ render_breadcrumb_item('post', '文章') }}
+    </ol>
+</nav>
+<h1> Hello Flask Bootstrap </h1>
+{% endblock %}
