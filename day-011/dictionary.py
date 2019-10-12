@@ -1,6 +1,7 @@
 # 定义一个字典，并将一定的值赋给变量
 
 MyDog = {'size':'big','color':'white','character':'gentle'}
+
 # 字典值通过‘键’来访问
 print(MyDog['size'])
 
