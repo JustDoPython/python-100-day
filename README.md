@@ -36,7 +36,7 @@
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
 - [第35天：Python 枚举](http://www.justdopython.com/2019/10/09/python-enum-036)
 - [第37天：Python shutil 模块](http://www.justdopython.com/2019/10/09/python-shutil-037)
-- [第49天：Python Queue 入门](https://github.com/JustDoPython/python-100-day/tree/master/day-049)
+- [第49天：Python Queue 入门](http://www.justdopython.com/2019/10/10/python-queue01)
 
 关注公众号：python技术，回复"python"一起学习交流
 
