@@ -22,7 +22,6 @@
 - [第16天：初识 Python 多线程 ](http://www.justdopython.com/2019/09/17/python-thread-016)
 - [第17天：Python 函数之参数 ](http://www.justdopython.com/2019/09/19/python-function-param-017)
 - [第18天：Python 高阶函数](http://www.justdopython.com/2019/09/20/python-higher-function-018)
-
 - [第19天：Python 之迭代器](http://www.justdopython.com/2019/09/21/python-iterator-019)
 - [第20天： Web开发 Jinja2模板引擎](http://www.justdopython.com/2019/09/24/python-web-jinjia-020)
 - [第21天：Python NameSpace&Scope](http://www.justdopython.com/2019/09/27/Python-Namespace&Scope-021)
@@ -37,6 +36,7 @@
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
 - [第35天：Python 枚举](http://www.justdopython.com/2019/10/09/python-enum-036)
 - [第37天：Python shutil 模块](http://www.justdopython.com/2019/10/09/python-shutil-037)
+- [第49天：Python Queue 入门](https://github.com/JustDoPython/python-100-day/tree/master/day-049)
 
 关注公众号：python技术，回复"python"一起学习交流
 
