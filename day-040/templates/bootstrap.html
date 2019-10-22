@@ -1,0 +1,19 @@
+{% from 'bootstrap/form.html' import render_form, render_form_row, render_field %}
+{{ bootstrap.load_css() }}
+<h1> render_form </h1>
+{{ render_form(form) }}
+
+<h1>render_form_row</h1>
+<form method="post" >
+    {{ render_form_row([form.name, form.city]) }}
+    {{ render_form_row([form.gender, form.birthday]) }}
+    {{ render_form_row([form.interest]) }}
+</form>
+
+<h1>render_field</h1>
+<form method="post" >
+    {{ render_field(form.name) }}
+    {{ render_field(form.gender) }}
+    {{ render_field(form.interest) }}
+</form>
+
