@@ -35,7 +35,7 @@
 - [第35天：Python Scrapy爬虫框架及搭建](http://www.justdopython.com/2019/10/25/python-Scrapy01-035)
 - [第36天：Python calendar 模块](http://www.justdopython.com/2019/10/19/python-calendar-036/)
 - [第37天：Python math 模块](http://www.justdopython.com/2019/10/20/python-math-037/)
-- [第38天：Python decimal 模块](http://www.justdopython.com/2019/10/21/python-math-038/)
+- [第38天：Python decimal 模块](http://www.justdopython.com/2019/10/21/python-decimal-038/)
 - [第39天：Python itertools 模块](http://www.justdopython.com/2019/10/23/python-itertools-039/)
 - [第40天：Python statistics 模块](http://www.justdopython.com/2019/10/24/python-statistics-040/)
 - [第43天：Web 开发 Bootstrap](http://www.justdopython.com/2019/10/11/python-web-flask-bootstrap-043/)
