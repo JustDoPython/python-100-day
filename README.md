@@ -38,6 +38,8 @@
 - [第38天：Python decimal 模块](http://www.justdopython.com/2019/10/21/python-decimal-038/)
 - [第39天：Python itertools 模块](http://www.justdopython.com/2019/10/23/python-itertools-039/)
 - [第40天：Python statistics 模块](http://www.justdopython.com/2019/10/24/python-statistics-040/)
+- [第41天：Python operator 模块](http://www.justdopython.com/2019/10/27/python-operator-041/)
+- [第42天：Python paramiko 模块](http://www.justdopython.com/2019/10/28/python-paramiko-042/)
 - [第43天：Web 开发 Bootstrap](http://www.justdopython.com/2019/10/11/python-web-flask-bootstrap-043/)
 - [第44天: Web 开发 Form](http://www.justdopython.com/2019/10/20/python-web-form-044/)
 - [第45天：初识 Python 多线程 ](http://www.justdopython.com/2019/09/17/python-thread-045)
