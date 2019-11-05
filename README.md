@@ -50,6 +50,7 @@
 - [第53天：Requests的基本用法](http://www.justdopython.com/2019/10/07/python-spider-requests-base-053)
 - [第54天：Requests的高级用法](http://www.justdopython.com/2019/10/07/python-spider-requests-senior-054)
 - [第59天：PyQuery 详解](http://www.justdopython.com/2019/10/07/python-spider-PyQuery-059)
+- [第92天：Python多线程之 Event 事件](http://www.justdopython.com/2019/11/05/python-event-092)
 
 关注公众号：python技术，回复"python"一起学习交流
 
