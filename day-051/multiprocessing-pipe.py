@@ -6,8 +6,8 @@ def f(conn):
     conn.close()
 
 if __name__ == '__main__':
-    parent_conn, child_conn = Pipe()
-    p = Process(target=f, args=(child_conn,))
+    conn1, conn2 = Pipe()
+    p = Process(target=f, args=(conn2,))
     p.start()
-    print(parent_conn.recv())
+    print(conn1.recv())
     p.join()
