@@ -32,8 +32,19 @@ class Handler(BaseHandler):
    
     @config(priority=2)
     def detail_page(self, response):
+        other = response.doc('html > body > .clearfix > .main_lt > div > .news_about > p').text()
+        source = other.split('\xa0\xa0\xa0\xa0\xa0')
+        ctime = source[2].replace('时间：', '')
+        editorial = source[0].split("：")[-1].strip()
         return {
             "title": response.doc('.news_title').text(),
-            "other": response.doc('html > body > .clearfix > .main_lt > div > .news_about > p').text(),
+            "ctime": ctime,
+            "editorial": editorial,
             "body": response.doc('html > body > .clearfix > .main_lt > div > .news_txt').text()
         }
+    
+    def on_result(self,result):
+        if not result:
+            return
+        sql = crawlerdb()
+        sql.insert(result)
