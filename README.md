@@ -54,7 +54,7 @@
 - [第54天：Requests的高级用法](http://www.justdopython.com/2019/10/07/python-spider-requests-senior-054)
 - [第59天：PyQuery 详解](http://www.justdopython.com/2019/10/07/python-spider-PyQuery-059)
 - [第 62 天：HTTP 入门]( https://github.com/JustDoPython/python-100-day/tree/master/day-062 )
-- [第74天：PyQuery 详解](http://www.justdopython.com/2019/11/24/python-newspaper-074)
+- [第74天：Python newspaper 框架](http://www.justdopython.com/2019/11/24/python-newspaper-074)
 - [第92天：Python多线程之 Event 事件](http://www.justdopython.com/2019/11/05/python-event-092)
 
 关注公众号：python技术，回复"python"一起学习交流
