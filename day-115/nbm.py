@@ -5,7 +5,7 @@ import numpy as np
 class Nbm(object):
 
     def getSampleSet(self):
-        dataSet = np.array(pd.read_csv('/Users/wubin/Downloads/data.csv'))  #将数据转为数组
+        dataSet = np.array(pd.read_csv('csv文件地址'))  #将数据转为数组
         featureData = dataSet[:, 0 : dataSet.shape[1] - 1] #取出特征
         labels = dataSet[:, dataSet.shape[1] - 1] #取出类别
         return featureData, labels
