@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Project Structure</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <!--注意这里的 url_for 参数，由于是在 blueprint 中定义的 endppint，需要在前面指定 blueprint 名称-->
+        <a href="{{url_for('profile_bp.createprofile')}}">创建配置</a>
+    </body>
+</html>
