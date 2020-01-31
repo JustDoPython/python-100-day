@@ -55,7 +55,12 @@
 - [第59天：PyQuery 详解](http://www.justdopython.com/2019/10/07/python-spider-PyQuery-059)
 - [第 62 天：HTTP 入门]( https://github.com/JustDoPython/python-100-day/tree/master/day-062 )
 - [第74天：Python newspaper 框架](http://www.justdopython.com/2019/11/24/python-newspaper-074)
+- [第 79 天：数据分析之 Numpy]( https://github.com/JustDoPython/python-100-day/tree/master/day-079 )
 - [第92天：Python多线程之 Event 事件](http://www.justdopython.com/2019/11/05/python-event-092)
+- [第 94 天：数据可视化之 pandas]( https://github.com/JustDoPython/python-100-day/tree/master/day-094 )
+- [第 106 天：机器学习概览]( https://github.com/JustDoPython/python-100-day/tree/master/day-106 )
+- [第 112 天：机器学习算法之蒙特卡洛方法]( https://github.com/JustDoPython/python-100-day/tree/master/day-112 )
+- [第 117 天：机器学习算法之 K 近邻]( https://github.com/JustDoPython/python-100-day/tree/master/day-117 )
 
 关注公众号：python技术，回复"python"一起学习交流
 
