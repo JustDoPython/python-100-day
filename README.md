@@ -61,6 +61,7 @@
 - [第 106 天：机器学习概览]( https://github.com/JustDoPython/python-100-day/tree/master/day-106 )
 - [第 112 天：机器学习算法之蒙特卡洛方法]( https://github.com/JustDoPython/python-100-day/tree/master/day-112 )
 - [第 117 天：机器学习算法之 K 近邻]( https://github.com/JustDoPython/python-100-day/tree/master/day-117 )
+- [第 120 天：机器学习算法之 K 均值聚类]( https://github.com/JustDoPython/python-100-day/tree/master/day-120 )
 
 关注公众号：python技术，回复"python"一起学习交流
 
