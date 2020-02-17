@@ -1,36 +1,70 @@
-import seaborn as sns
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
-from scipy import stats
-sns.set(color_codes=True)
-
-mean, cov = [0, 1], [(1, .5), (.5, 1)]
-data = np.random.multivariate_normal(mean, cov, 200)
-df = pd.DataFrame(data, columns=["x", "y"])
+import seaborn as sns
+sns.set(style="darkgrid")
 
 # 3.1 示例
-sns.jointplot(x="x", y="y", data=df)
+df = pd.DataFrame(dict(time=np.arange(500), value=np.random.randn(500).cumsum()))
+sns.relplot(x="time", y="value", kind="line", data=df)
+
+df = pd.DataFrame(np.random.randn(500, 2).cumsum(axis=0), columns=["x", "y"])
+sns.relplot(x="x", y="y", sort=False, kind="line", data=df)
 
 # 3.2 示例
-x, y = np.random.multivariate_normal(mean, cov, 1000).T
-with sns.axes_style("white"):
-    sns.jointplot(x=x, y=y, kind="hex", color="k")
+fmri = sns.load_dataset("fmri")
+print(fmri)
+
+sns.relplot(x="timepoint", y="signal", kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", ci=None, kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", kind="line", ci="sd", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", estimator=None, kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", hue="event", kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", hue="region", style="event", kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", hue="region", style="event", dashes=False, markers=True, kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", hue="event", style="event", kind="line", data=fmri)
+
+sns.relplot(x="timepoint", y="signal", hue="region", units="subject", estimator=None, kind="line", data=fmri.query("event == 'stim'"))
 
 # 3.3 示例
-sns.jointplot(x="x", y="y", data=df, kind="kde")
+dots = sns.load_dataset("dots").query("align == 'dots'")
+print(dots)
 
-f, ax = plt.subplots(figsize=(6, 6))
-sns.kdeplot(df.x, df.y, ax=ax)
-sns.rugplot(df.x, color="g", ax=ax)
-sns.rugplot(df.y, vertical=True, ax=ax)
+sns.relplot(x="time", y="firing_rate", 
+            hue="coherence", style="choice", 
+            kind="line", data=dots)
+			
+palette = sns.cubehelix_palette(n_colors=6)  # 数据集中 coherence 变量有6个数值，所以 n_colors=6
+sns.relplot(x="time", y="firing_rate", hue="coherence", style="choice", palette=palette, kind="line", data=dots)
 
-f, ax = plt.subplots(figsize=(6, 6))
-cmap = sns.cubehelix_palette(as_cmap=True, dark=0, light=1, reverse=True)
-sns.kdeplot(df.x, df.y, cmap=cmap, n_levels=60, shade=True)
+from matplotlib.colors import LogNorm
+sns.relplot(x="time", y="firing_rate",
+            hue="coherence", style="choice",
+            hue_norm=LogNorm(),
+            kind="line", data=dots)
+			
+sns.relplot(x="time", y="firing_rate",
+            size="coherence", style="choice",
+            kind="line", data=dots)
+			
+sns.relplot(x="time", y="firing_rate",
+           hue="coherence", size="choice",
+           kind="line", data=dots)
+		   
+# 3.4 示例
+df = pd.DataFrame(dict(time=pd.date_range("2017-1-1", periods=500),
+                       value=np.random.randn(500).cumsum()))
+g = sns.relplot(x="time", y="value", kind="line", data=df)
 
-g = sns.jointplot(x="x", y="y", data=df, kind="kde", color="m")
-g.plot_joint(plt.scatter, c="w", s=30, linewidth=1, marker="+")
-g.ax_joint.collections[0].set_alpha(0)
-g.set_axis_labels("$X$", "$Y$")
+g.fig.autofmt_xdate()
+
 
 
 
