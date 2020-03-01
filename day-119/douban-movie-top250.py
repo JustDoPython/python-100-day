@@ -42,7 +42,6 @@ def get_movie_url(html):
 
 # 【名称，链接。导演，国家，上映时间，类型，评分，[五星，四星，三星，二星，一星占比]，评价人数】
 def get_movie_info(url):
-    ans = {}
     html = get_page_html(url)
     soup = bs4.BeautifulSoup(html, 'html.parser')
     content = soup.find('div', id='content')
@@ -64,11 +63,10 @@ def get_movie_info(url):
     votes = content.find('span', property='v:votes').text
 
     rating_per_items = content.find('div', class_='ratings-on-weight').find_all('div', class_='item')
-    rating_per = [rating_per_items[0].find('span', class_='rating_per').text,
-                  rating_per_items[1].find('span', class_='rating_per').text]
+    rating_per = [rating_per_items[0].find('span', class_='rating_per').text, rating_per_items[1].find('span', class_='rating_per').text]
 
-    return {'title': title, 'url': url, 'director': director, 'country': country, 'year': year, 'type': type,
-            'average': average, 'votes': votes, 'rating_per': rating_per}
+    return {'title': title, 'url': url, 'director': "#".join(director), 'country': country, 'year': year, 'type': "#".join(type),
+            'average': average, 'votes': votes, 'rating_per': "#".join(rating_per)}
 
 
 def main():
@@ -93,17 +91,25 @@ def getUrls():
 
 def writeToFile(content):
     filename = 'doubanTop250.txt'
-    with open(filename,'a') as f: 
+    with open(filename,'a') as f:
         f.write(content + '\n')
-
 
 if __name__ == '__main__':
     list_urls = getUrls()
     list_htmls = [get_page_html(url) for url in list_urls]
     movie_urls = [get_movie_url(html) for html in list_htmls]
+    movie_url_list = []
+    for url_list in movie_urls:
+        movie_url_list += url_list
 
-    movie_details = [get_movie_info(url) for url in movie_urls[0]]
-    
+    for url in movie_url_list:
+        print(url)
+
+    movie_details = [get_movie_info(url) for url in movie_url_list]
+
     for detail in movie_details:
         writeToFile(str(detail))
+        print(detail)
 
+
+#print(get_movie_info('https://movie.douban.com/subject/1292052/'))
