@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+    <script src='{{ url_for("static",filename="jquery.min.js") }}'></script>
+    <script type="text/javascript" src='{{ url_for("static",filename="echarts.min.js") }}'></script>
+</head>
+
+<body>
+    <div id="bar" style="width:1000px; height:600px;"></div>
+    <script>
+        $(
+            function () {
+                var chart = echarts.init(document.getElementById('bar'), 'white', { renderer: 'canvas' });
+                $.ajax({
+                    type: "GET",
+                    url: "/barChart",
+                    dataType: 'json',
+                    success: function (result) {
+                        chart.setOption(result);
+                    }
+                });
+            }
+        )
+    </script>
+</body>
+
+</html>
