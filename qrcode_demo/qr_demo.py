@@ -1,7 +1,7 @@
 import qrcode
 
 # # 二维码内容
-# data = 'http://www.justdopython.com/'
+# data = 'https://www.baidu.com/'
 # # 生成二维码
 # img = qrcode.make(data=data)
 # # 显示二维码
@@ -22,7 +22,7 @@ qr = qrcode.QRCode(
     border=3,
 )
 # 二维码内容
-data = 'http://www.justdopython.com/'
+data = 'https://www.baidu.com/'
 qr.add_data(data=data)
 # 启用二维码颜色设置
 qr.make(fit=True)
