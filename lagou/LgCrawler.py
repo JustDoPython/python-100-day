@@ -80,10 +80,6 @@ class LgCrawler(object):
         sql = 'select city, count(1) counts from jobs group by city'
         results = self.query(sql)
 
-        citys = []
-        values = []
-
-
         c = (
             Geo()
                 .add_schema(maptype="china")
@@ -95,11 +91,13 @@ class LgCrawler(object):
                 .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
                 .set_global_opts(
                 visualmap_opts=opts.VisualMapOpts(),
-            ).render("city_heart.html")
+            ).render("拉钩城市热力图.html")
         )
 
         sql = 'select city,counts from (select city, count(1) counts from jobs group by city) a order by counts desc limit 20'
         results = self.query(sql)
+        citys = []
+        values = []
         for row in results:
             citys.append(row[0])
             values.append(row[1])
@@ -109,17 +107,12 @@ class LgCrawler(object):
                 .add_yaxis("各城市的招聘数量 Top 20", values)
                 .set_global_opts(
                 xaxis_opts=opts.AxisOpts(name_rotate=60, name="城市", axislabel_opts={"rotate": 45})
-            ).render("bar.html")
+            ).render("拉钩城市招聘图.html")
         )
 
     def education(self):
         sql = 'select education,count(1) counts from jobs group by education'
         results = self.query(sql)
-        citys = []
-        values = []
-        for row in results:
-            citys.append(row[0])
-            values.append(row[1])
         c = (
             Pie()
                 .add("", list(results))
@@ -132,11 +125,6 @@ class LgCrawler(object):
     def workYear(self):
         sql = 'select workYear,count(1) counts from jobs group by workYear'
         results = self.query(sql)
-        citys = []
-        values = []
-        for row in results:
-            citys.append(row[0])
-            values.append(row[1])
         c = (
             Pie()
                 .add("", list(results))
@@ -264,4 +252,4 @@ class LgCrawler(object):
                                  .render("拉勾融资.html")
         )
 if __name__ == '__main__':
-    LgCrawler().financeStage()
+    LgCrawler().field()
